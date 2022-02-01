@@ -1,0 +1,47 @@
+<div id="sidebar" style="background-color: grey;">
+<ul class="nav flex-column">
+
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">
+	<span class="icon">
+	<ion-icon name="home-outline"></ion-icon></span>
+	<span >Главная</span></a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{{ url_for('admin.login_admin') }}">
+	<span class="icon">
+	<ion-icon name="aperture-outline"></ion-icon></span>
+	<span >Админ Панель</span></a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{{ url_for('dashboard.login_dashboard') }}">
+	<span class="icon">
+	<ion-icon name="aperture-outline"></ion-icon></span>
+	<span >Рабочий Стол</span></a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{{ url_for('chat.login_chat') }}">
+	<span class="icon">
+	<ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+	<span >Чат</span></a>
+  </li>
+  
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="{{ url_for('documents.login_documents') }}">
+	<span class="icon">
+	<ion-icon name="settings-outline"></ion-icon></span>
+	<span >Документы</span></a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">
+	<span class="icon">
+	<ion-icon name="settings-outline"></ion-icon></span>
+	<span >Выход</span></a>
+  </li>
+
+</ul>
+</div>
