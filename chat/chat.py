@@ -1,11 +1,11 @@
 from flask import Blueprint, render_template, url_for, redirect
 
-admin = Blueprint('admin', __name__, template_folder='templates', static_folder='static')
+chat = Blueprint('chat', __name__, template_folder='templates', static_folder='static')
 
-@admin.route('/')
-def login_admin():
-    return render_template('admin/index.html', title='Administrator' )
+@chat.route('/')
+def login_chat():
+    return render_template('chat/index.html', title='Chat' )
 
-@admin.route('/logout')
+@chat.route('/logout')
 def logout():
     return redirect(url_for('index'))           # это функция index из run.py(app.route('/))

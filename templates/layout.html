@@ -11,9 +11,10 @@
     <div class="menu">
         <ul>
             <li><a href="{{ url_for('index') }}"><p>Главная</p></a></li>
-            <li><a href="{{ url_for('admin.login_admin') }}"><p>Админка</p></a></li>   
-            <li><a href="#"><p>Блог</p></a></li>
-            <li><a href="#"><p>Контакты</p></a></li>                        
+            <li><a href="{{ url_for('admin.login_admin') }}"><p>Админ Панель</p></a></li>   
+            <li><a href="{{ url_for('dashboard.login_dashboard') }}"><p>Рабочий стол</p></a></li>   
+            <li><a href="{{ url_for('chat.login_chat') }}"><p>Служебный Чат</p></a></li>                           
+            <li><a href="{{ url_for('documents.login_documents') }}"><p>Документы</p></a></li>                      
         </ul>
     </div>
     <h1>{{ title }}</h1>
